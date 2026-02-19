@@ -51,12 +51,11 @@ MySQL/MariaDB (An RDBMS that uses SQL)
 2. Clone or download the project repository.
 3. Extract the project files and place the folder inside the www directory of WAMP.
 4. Create a database connection file (e.g., dbconnect.php) to connect the project with your database and paste and set yours accordingly
-
-<?php
-$server='localhost';
-$user=' set your user'; 
-$pass='set ur pass or keep it empty'; 
-$db='db name';  // database name 
+5. <?php
+$server = "localhost";
+$user   = "set your user";
+$pass   = "set your password or keep it empty";
+$db     = "db name";   // database name
 
 $conn = new mysqli($server, $user, $pass, $db);
 
@@ -65,12 +64,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
-5. Open phpMyAdmin and create a new database .
-6. .sql you need to create and create tables accordingly and Import the file(.sql is nothing but db)
-7. Open your web browser and type:
-8. localhost/foldername
-9. The Hospital Management System project will now run successfully.
-10. Hurray! That’s it! 🎉
-11. create another folder for images also.
+        
+7. Open phpMyAdmin and create a new database .
+8. .sql you need to create and create tables accordingly and Import the file(.sql is nothing but db)
+9. Open your web browser and type:
+10. localhost/foldername
+11. The Hospital Management System project will now run successfully.
+12. Hurray! That’s it! 🎉
+13. create another folder for images also.
 
 
